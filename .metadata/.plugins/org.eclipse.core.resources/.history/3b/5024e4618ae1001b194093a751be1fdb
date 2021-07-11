@@ -1,0 +1,18 @@
+package com.example.demo.serviceImpl;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.service.UserService;
+
+@Service("anotherUser")
+@Primary
+public class AnotherUserServiceImpl implements UserService{
+
+	@Override
+	public String getUserName() {
+		// TODO Auto-generated method stub
+		return "From another user service impl";
+	}
+	
+}

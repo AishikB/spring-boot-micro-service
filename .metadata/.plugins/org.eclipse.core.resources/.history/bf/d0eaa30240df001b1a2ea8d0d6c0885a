@@ -1,0 +1,16 @@
+package com.example.demo.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.service.UserService;
+
+@Service
+public class AnotherUserServiceImpl implements UserService{
+
+	@Override
+	public String getUserName() {
+		// TODO Auto-generated method stub
+		return "From another user service impl";
+	}
+	
+}
